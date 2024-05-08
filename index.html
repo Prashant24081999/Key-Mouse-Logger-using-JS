@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keypress Logger</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="container flex flex-col items-center  justify-center gap-8 absolute top-1/3">
+        <h1 class="text-center py-3 b rounded-md w-1/5 text-4xl font-bold">KeyLogger</h1>
+        <div class="button-container flex gap-4">
+            <button id="start-btn"
+                class="border-2 border-black px-4 py-2 rounded-md hover:bg-green-500 hover:text-white hover:border-green-500">Start
+                Logging
+                Keypresses</button>
+            <button id="stop-btn"
+                class="border-2 border-black px-4 py-2 rounded-md hover:bg-red-500 hover:text-white hover:border-red-500">Stop
+                Logging
+                Keypresses</button>
+        </div>
+        <div class="button-container flex flex-col gap-4 lg:flex-row lg:gap-12">
+            <div id="log" class="border-2 border-slate-500 px-72 py-8 mt-4 rounded-md"></div>
+            <div id="state" class="border-2 border-slate-500 px-72 py-8 mt-4 rounded-md"></div>
+        </div>
+        <div class="button-container flex flex-col gap-4 lg:flex-row lg:gap-12">
+            <div id="leftMouse" class="border-2 border-slate-500 px-4 py-8 mt-4 rounded-md">Left Mouse button is clicked
+            </div>
+            <div id="rightMouse" class="border-2 border-slate-500 px-4 py-8 mt-4 rounded-md">Right mouse button is
+                clicked
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
